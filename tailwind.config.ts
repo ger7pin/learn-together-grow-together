@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        help: {
+          DEFAULT: "hsl(var(--help))",
+          foreground: "hsl(var(--help-foreground))",
+        },
+        star: {
+          DEFAULT: "hsl(var(--star))",
+          foreground: "hsl(var(--star-foreground))",
+        },
+        "surface-soft": "hsl(var(--surface-soft))",
+        "surface-alt": "hsl(var(--surface-alt))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
