@@ -98,12 +98,12 @@ const Index = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { icon: HandHelping, color: "help", title: "Pide ayuda al instante", text: "Solicita una micro-tutoría sobre la duda exacta que tienes y conecta con un compañero que ya la dominó." },
-                { icon: Coins, color: "accent", title: "Gana créditos enseñando", text: "Comparte lo que sabes, suma créditos y canjéalos por nuevas clases cuando los necesites." },
-                { icon: ShieldCheck, color: "primary", title: "Tutores con confianza", text: "Cada tutor muestra su nota en la asignatura y valoraciones reales. Sin sorpresas." },
-              ].map(({ icon: Icon, color, title, text }) => (
+                { icon: HandHelping, badge: "bg-help/15 text-help", title: "Pide ayuda al instante", text: "Solicita una micro-tutoría sobre la duda exacta que tienes y conecta con un compañero que ya la dominó." },
+                { icon: Coins, badge: "bg-accent/15 text-accent", title: "Gana créditos enseñando", text: "Comparte lo que sabes, suma créditos y canjéalos por nuevas clases cuando los necesites." },
+                { icon: ShieldCheck, badge: "bg-primary/15 text-primary", title: "Tutores con confianza", text: "Cada tutor muestra su nota en la asignatura y valoraciones reales. Sin sorpresas." },
+              ].map(({ icon: Icon, badge, title, text }) => (
                 <div key={title} className="card-float p-6">
-                  <span className={`inline-flex h-12 w-12 items-center justify-center rounded-lg mb-4 bg-${color}/15 text-${color}`}>
+                  <span className={`inline-flex h-12 w-12 items-center justify-center rounded-lg mb-4 ${badge}`}>
                     <Icon className="h-6 w-6" />
                   </span>
                   <h3 className="text-xl mb-2">{title}</h3>
@@ -123,12 +123,12 @@ const Index = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { n: "01", title: "Publica tu duda", text: "Indica la asignatura, el tema y cuándo te viene bien.", color: "primary" },
-                { n: "02", title: "Conecta con un tutor", text: "Elige entre compañeros validados con buenas notas y reseñas.", color: "accent" },
-                { n: "03", title: "Aprende y valora", text: "Resuelve la duda en minutos y deja una valoración honesta.", color: "star" },
+                { n: "01", title: "Publica tu duda", text: "Indica la asignatura, el tema y cuándo te viene bien.", num: "text-primary/40" },
+                { n: "02", title: "Conecta con un tutor", text: "Elige entre compañeros validados con buenas notas y reseñas.", num: "text-accent/40" },
+                { n: "03", title: "Aprende y valora", text: "Resuelve la duda en minutos y deja una valoración honesta.", num: "text-star/60" },
               ].map((s) => (
                 <div key={s.n} className="card-float p-6 relative">
-                  <span className={`text-5xl font-bold text-${s.color}/30`}>{s.n}</span>
+                  <span className={`text-5xl font-bold ${s.num}`}>{s.n}</span>
                   <h3 className="text-xl mt-2 mb-2">{s.title}</h3>
                   <p className="text-muted-foreground">{s.text}</p>
                 </div>
