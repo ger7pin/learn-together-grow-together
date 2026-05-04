@@ -25,7 +25,7 @@ const Index = () => {
               <a href="#login">Entrar</a>
             </Button>
             <Button asChild className="rounded-xl bg-primary hover:bg-primary-glow text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:scale-105">
-              <a href="#registro">Únete ahora</a>
+              <a href="https://effulgent-cucurucho-cee876.netlify.app" target="_blank" rel="noopener noreferrer">Probar MVP</a>
             </Button>
           </div>
         </div>
@@ -51,10 +51,28 @@ const Index = () => {
                 Conectamos a estudiantes que dominan la materia con compañeros que necesitan
                 un empujón. Resuelve dudas al instante, gana créditos y avanza a tu ritmo.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+              {/* Banner Encuesta de Clase */}
+              <div className="p-5 rounded-2xl border border-primary/30 bg-primary/10 backdrop-blur-sm text-left animate-fade-in shadow-[0_0_30px_rgba(var(--primary),0.1)]">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                  <div className="flex-1">
+                    <h3 className="font-bold text-white mb-1">📋 ¡Ayúdanos con nuestro proyecto!</h3>
+                    <p className="text-sm text-white/70">
+                      Rellena esta breve encuesta. Los datos recopilados serán utilizados exclusivamente de forma anónima para un trabajo de clase en la universidad.
+                    </p>
+                  </div>
+                  <Button asChild className="w-full sm:w-auto shrink-0 rounded-xl bg-primary hover:bg-primary-glow text-white shadow-lg shadow-primary/25 transition-all hover:scale-105">
+                    <a href="https://learn2getheruclm.netlify.app/" target="_blank" rel="noopener noreferrer">
+                      Ir a la encuesta
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
                 <Button asChild size="lg" className="h-14 px-8 rounded-2xl bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white shadow-xl shadow-primary/20 transition-all hover:scale-105 hover:-translate-y-1">
-                  <a href="#registro" className="flex items-center gap-2">
-                    Empezar gratis <ArrowRight className="h-5 w-5" />
+                  <a href="https://effulgent-cucurucho-cee876.netlify.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    Probar MVP <ArrowRight className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all hover:scale-105 hover:-translate-y-1">
@@ -227,7 +245,7 @@ const Index = () => {
                 </p>
                 <div className="pt-8">
                   <Button asChild size="lg" className="h-16 px-10 rounded-2xl bg-white text-primary hover:bg-white/90 text-lg font-bold shadow-2xl transition-all hover:scale-105 hover:-translate-y-1">
-                    <a href="#">Crear mi cuenta gratis</a>
+                    <a href="https://effulgent-cucurucho-cee876.netlify.app" target="_blank" rel="noopener noreferrer">Probar MVP</a>
                   </Button>
                 </div>
               </div>
